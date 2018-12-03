@@ -1,0 +1,14 @@
+mat-toolbar.mat-primary {
+    background: rgb(170, 56, 56);
+    color: #fff;
+}
+
+mat-expansion-panel
+{
+  background:rgba(173, 181, 187, 0.471);
+  font-weight: bold;
+}
+mat-expansion-panel-header
+{
+  font-weight: bold;
+}

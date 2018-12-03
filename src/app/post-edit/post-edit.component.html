@@ -1,0 +1,33 @@
+<mat-card>
+  <form (submit)="onEditPost(postForm)" #postForm="ngForm">
+      <mat-form-field>
+          <mat-label>Bill Title:</mat-label>
+        <input
+          placeholder="{{post.title}}"
+          matInput
+          type="text"
+          name="title"
+          ngModel
+          required
+          minlength="3"
+          #title="ngModel">
+        <mat-error *ngIf="title.invalid">Please enter a bill title.</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Bill Cost:</mat-label>
+          <span matPrefix>€&nbsp;</span>
+        <input
+          matInput
+          name="content"
+          type="number"
+          ngModel
+          required
+          #content="ngModel">
+        <mat-error *ngIf="content.invalid">Please enter a numerical value.</mat-error>
+      </mat-form-field>
+    <button 
+      mat-raised-button
+      color="accent"
+      type="submit">Update Bill</button>
+  </form>
+</mat-card>

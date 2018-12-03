@@ -1,0 +1,18 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+mat-toolbar.mat-primary[_ngcontent-c0] {
+  
+  background: rgb(190, 59, 59);
+}
+mat-card:not([class*=mat-elevation-z])
+{
+  background:rgba(173, 181, 187, 0.471);
+
+}
+
+mat-fab.mat-accent, .mat-flat-button.mat-accent, .mat-mini-fab.mat-accent, .mat-raised-button.mat-accent
+{
+  background-color: crimson;
+}
